@@ -4,20 +4,20 @@ layout: default
 ---
 
 <div style="display:flex;gap:1.25rem;align-items:center;flex-wrap:wrap;">
-  <div style="flex:0 0 240px;">
-    <img src="/assets/profile.jpg" alt="Matt Borowski" style="width:240px;height:240px;object-fit:cover;border-radius:8px;" />
+  <div style="flex:0 0 264px;">
+    <img src="/assets/profile.jpg" alt="Matt Borowski" style="width:264px;height:264px;object-fit:cover;border-radius:8px;" />
   </div>
   <div style="flex:1;min-width:220px;">
 
 <p>Hi there! Thanks for your interest.</p>
 
-<p>I'm an MLE with focus on <strong>CUDA</strong> kernel profiling and optimization.</p>
+<p>My name is Matt and I'm an MLE with focus on <strong>CUDA</strong> kernel profiling and optimization.</p>
 
 <p>You can view my work below or on my <a href="https://github.com/MattJBorowski1991">GitHub</a>.</p>
 
-<p>Beyond CUDA I have experience in machine learning and data centers.</p>
+<p>Beyond CUDA I have experience in ML / deep learning and data centers.</p>
 
-<p>My Uni background is Applied Mathematics at <a href="https://www.maths.ox.ac.uk/">University of Oxford</a> where I was advised by <a href="https://www.maths.ox.ac.uk/">Prof. Ben Hambly</a>.</p>
+<p>My university background is Applied Mathematics at <a href="https://www.maths.ox.ac.uk/">University of Oxford</a> where I was advised by <a href="https://people.maths.ox.ac.uk/hambly/">Prof. Ben Hambly</a>.</p>
 
 <p>Feel free to reach out!</p>
 
@@ -25,7 +25,6 @@ layout: default
 </div>
 
 <p>
-  <strong>Connect</strong>
   <span class="social-list" style="margin-left:.5rem;">
     <a class="social linkedin" href="https://www.linkedin.com/in/matt-borowski-780aab87/" aria-label="LinkedIn"> 
       <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn" />
@@ -46,7 +45,7 @@ layout: default
   </span>
 </p>
 
-## Posts
+## Some of my work
 
 {% for post in site.posts %}
 <article style="margin-bottom:1.15rem;padding-bottom:1rem;border-bottom:1px solid #eee;">
