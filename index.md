@@ -1,5 +1,5 @@
 ---
-title: Home
+title: MJB
 layout: default
 ---
 
@@ -11,13 +11,13 @@ layout: default
 
 <p>Hi there! Thanks for your interest.</p>
 
-<p>My name is Matt and I'm an MLE with focus on <strong>CUDA</strong> kernel profiling and optimization.</p>
+<p>My name is Matt and I focus on <strong>CUDA</strong> kernel profiling and optimization.</p>
 
 <p>You can view my work below or on my <a href="https://github.com/MattJBorowski1991">GitHub</a>.</p>
 
-<p>Beyond CUDA I have experience in ML / deep learning and data centers.</p>
+<p>Apart from CUDA & ML I have experience in data center pre-development.</p>
 
-<p>My university background is Applied Mathematics at <a href="https://www.maths.ox.ac.uk/">University of Oxford</a> where I was advised by <a href="https://people.maths.ox.ac.uk/hambly/">Prof. Ben Hambly</a>.</p>
+<p>I did my MSc in Applied Mathematics at <a href="https://www.maths.ox.ac.uk/">University of Oxford</a>.</p>
 
 <p>Feel free to reach out!</p>
 
