@@ -45,13 +45,13 @@ layout: default
   </span>
 </p>
 
-## Some of my work
+<h2 style="margin-top:36px;margin-bottom:12px">Some of my work</h2>
 
 {% for post in site.posts %}
 <article style="margin-bottom:1.15rem;padding-bottom:1rem;border-bottom:1px solid #eee;">
   <h3 style="margin:.2rem 0 .35rem 0"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
   <div style="color:#6b7280;font-size:0.9rem;margin-bottom:.5rem">{{ post.date | date: "%b %d, %Y" }}</div>
   <p>{% if post.summary %}{{ post.summary }}{% else %}{{ post.excerpt | strip_html | truncatewords:40 }}{% endif %}</p>
-  <p><a href="{{ post.url | relative_url }}">Read more →</a></p>
+  
 </article>
 {% endfor %}
