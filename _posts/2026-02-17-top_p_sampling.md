@@ -1,5 +1,5 @@
 ---
-title: "Performance Analysis: Top-P Sampling in Large Language Models"
+title: "Radix Sort & Top-P Sampling Kernels in LLMs"
 date: 2026-02-17 10:00:00 +0000
 layout: post
 summary: "Whenever you interact with ChatGPT, Gemini, or any modern LLM, the final inference step determining response speed is top-p (nucleus) sampling - the algorithm that selects tokens from the model's vocabulary.
