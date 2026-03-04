@@ -1,5 +1,5 @@
 ---
-title: "Tensor Cores + Multi-Head Attention — Latency Down by 30%"
+title: "Tensor Cores + Multi-Head Attention"
 date: 2026-03-04 10:00:00 +0000
 layout: post
 summary: >
@@ -20,7 +20,7 @@ I profiled the standard fused Flash Attention kernel against a Tensor Core–opt
 - **Next steps:** Try `8×8×32` tiles to improve occupancy and add multi-warp d-splits to increase theoretical active warps per scheduler.
 
 <p style="max-width:100%;overflow:hidden;">
-	<img src="{{ site.baseurl }}/assets/top-p-profile.png" alt="Tensor Cores MHA profile" style="width:100%;height:auto;display:block;margin:12px 0;" />
+	<img src="{{ site.baseurl }}/assets/fa_tc_v1_warp_work.mp4" alt="Tensor Cores MHA - warp work" style="width:100%;height:auto;display:block;margin:12px 0;" />
 </p>
 
-See the kernel code on GitHub: [mha_kernels/fa_tc_v1a.cu](https://github.com/MattJBorowski1991/QuantizedMHA/blob/main/mha_kernels/fa_tc_v1a.cu) and the full analysis: [profiles/md/run3a/ncu_high_level.md](https://github.com/MattJBorowski1991/QuantizedMHA/blob/main/profiles/md/run3a/ncu_high_level.md).
+See the kernel code on my GitHub [here](https://github.com/MattJBorowski1991/QuantizedMHA/blob/main/mha_kernels/fa_tc_v1a.cu) and the full analysis [here](https://github.com/MattJBorowski1991/QuantizedMHA/blob/main/profiles/md/run3a/ncu_high_level.md).

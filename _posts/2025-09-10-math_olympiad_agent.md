@@ -4,10 +4,9 @@ date: 2025-09-10 10:00:00 +0000
 layout: post
 summary: >
   This project implements an AI agent for solving International Mathematical Olympiad (IMO)-level problems,
-  inspired by the self-verification pipeline described in the paper "Gemini 2.5 Pro Capable of Winning Gold at IMO 2025"
-  by Yichen Huang and Lin F. Yang. The agent uses a multi-stage iterative process with rigorous verification to
-  generate and refine solutions. It is built with LangGraph for workflow orchestration and supports the A2A
-  (Agent-to-Agent) protocol for potential multi-agent collaboration.
+  inspired by the self-verification pipeline described in the paper "Gemini 2.5 Pro Capable of Winning Gold at IMO 2025".
+  The agent uses a multi-stage iterative process with rigorous verification to generate and refine solutions. 
+  Built with LangGraph for workflow orchestration and supports the A2A protocol for multi-agent collaboration.
 ---
 
 
