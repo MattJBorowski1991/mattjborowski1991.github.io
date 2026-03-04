@@ -6,7 +6,7 @@ summary: >
 	Optimized a custom radix-sort pipeline using Nsight Compute. Profiling Warp State Statistics and
 	uncoalesced global accesses reduced long-scoreboard stalls by over 50%, illustrating GPU memory-hierarchy
 	trade-offs and optimization trade-offs.
-
+---
 
 This post describes optimizing a custom radix-sort pipeline using Nsight Compute. Profiling revealed that
 uncoalesced global loads/stores and Warp State Statistics caused long-scoreboard stalls; targeted changes

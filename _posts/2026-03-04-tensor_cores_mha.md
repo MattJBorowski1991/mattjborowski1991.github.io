@@ -20,7 +20,10 @@ I profiled the standard fused Flash Attention kernel against a Tensor Core–opt
 - **Next steps:** Try `8×8×32` tiles to improve occupancy and add multi-warp d-splits to increase theoretical active warps per scheduler.
 
 <p style="max-width:100%;overflow:hidden;">
-	<img src="{{ site.baseurl }}/assets/fa_tc_v1_warp_work.mp4" alt="Tensor Cores MHA - warp work" style="width:100%;height:auto;display:block;margin:12px 0;" />
+  <video controls playsinline style="width:100%;height:auto;display:block;margin:12px 0;">
+    <source src="{{ site.baseurl }}/assets/fa_tc_v1_warp_work.mp4" type="video/mp4">
+    Your browser does not support the video tag. <a href="{{ site.baseurl }}/assets/fa_tc_v1_warp_work.mp4">Download the MP4</a>.
+  </video>
 </p>
 
 See the kernel code on my GitHub [here](https://github.com/MattJBorowski1991/QuantizedMHA/blob/main/mha_kernels/fa_tc_v1a.cu) and the full analysis [here](https://github.com/MattJBorowski1991/QuantizedMHA/blob/main/profiles/md/run3a/ncu_high_level.md).
