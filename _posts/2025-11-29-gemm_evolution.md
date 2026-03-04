@@ -3,10 +3,10 @@ title: "GEMM Evolution: CUDA suite with 13 kernels"
 date: 2025-11-29 10:00:00 +0000
 layout: post
 summary: >
-	Progressive CUDA GEMM suite implementing 13 kernels, from naive and anti-patterns to shared/register tiling,
-	float4/vectorized kernels, autotuned tile sizes, warp-level WMMA, and cp.async double-buffered pipelines.
-	Includes cuBLAS references. The unified runner records GFLOPS, GB/s, arithmetic intensity (AI), and occupancy
-	across matrix sizes (1K–8K), and generates roofline plots plus Markdown performance tables.
+  Progressive CUDA GEMM suite implementing 13 kernels, from naive and anti-patterns to shared/register tiling,
+  float4/vectorized kernels, autotuned tile sizes, warp-level WMMA, and cp.async double-buffered pipelines.
+  Includes cuBLAS references. The unified runner records GFLOPS, GB/s, arithmetic intensity (AI), and occupancy
+  across matrix sizes (1K–8K), and generates roofline plots plus Markdown performance tables.
 ---
 
 
