@@ -11,13 +11,13 @@ layout: default
 
 <p>Hi there! Thanks for your interest.</p>
 
-<p>My name is Matt and I focus on <strong>CUDA</strong> kernel profiling and optimization.</p>
-
-<p>You can view my work below or on my <a href="https://github.com/MattJBorowski1991">GitHub</a>.</p>
-
-<p>Apart from CUDA & ML I have experience (and interest) in data center pre-development.</p>
+<p>My name is Matt and I focus on <strong>CUDA</strong> kernels.</p>
 
 <p>I did my MSc in Applied Mathematics at <a href="https://www.maths.ox.ac.uk/">University of Oxford</a>.</p>
+
+<p>You can view some of my work below or on my <a href="https://github.com/MattJBorowski1991">GitHub</a>.</p>
+
+<p>Apart from CUDA & ML I am interested in data center development.</p>
 
 <p>Feel free to reach out!</p>
 

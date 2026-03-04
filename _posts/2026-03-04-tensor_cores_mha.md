@@ -3,9 +3,9 @@ title: "Tensor Cores + Multi-Head Attention — Latency Down by 30%"
 date: 2026-03-04 10:00:00 +0000
 layout: post
 summary: >
-	I profiled the standard fused Flash Attention kernel against a Tensor Core–optimized version.
-	Result: 30.7% runtime speedup (8.33ms → 5.77ms) using `WMMA` for `Q@K^T` and `P@V`, where one warp owns a
-	`16×d` chunk of `Q` and processes a single `16×16×16` tile at a time.
+  I profiled the standard fused Flash Attention kernel against a Tensor Core–optimized version.
+  Result: 30.7% runtime speedup (8.33ms → 5.77ms) using `WMMA` for `Q@K^T` and `P@V`, where one warp owns a
+  `16×d` chunk of `Q` and processes a single `16×16×16` tile at a time.
 ---
 
 
