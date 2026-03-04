@@ -25,4 +25,4 @@ unified runner for automated benchmarking and visualization.
   <img src="{{ site.baseurl }}/assets/roofline.png" alt="GEMM Evolution: Roofline" style="width:100%;height:auto;display:block;margin:12px 0;" />
 </p>
 
-You can see the full project on GitHub: [GemmEvolution](https://github.com/MattJBorowski1991/GemmEvolution).
+You can see the full project on my GitHub [here](https://github.com/MattJBorowski1991/GemmEvolution).
