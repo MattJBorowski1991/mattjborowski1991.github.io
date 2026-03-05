@@ -17,7 +17,7 @@ layout: default
 
 <p>You can view some of my work below or on my <a href="https://github.com/MattJBorowski1991">GitHub</a>.</p>
 
-<p>Apart from CUDA I am very much interested in ML & data centers.</p>
+<p>I am also very much interested in Machine Learning & data centers.</p>
 
 <p>Feel free to reach out!</p>
 
@@ -50,7 +50,6 @@ layout: default
 {% for post in site.posts %}
 <article style="margin-bottom:1.15rem;padding-bottom:1rem;border-bottom:1px solid #eee;">
   <h3 style="margin:.2rem 0 .35rem 0"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-  <div style="color:#6b7280;font-size:0.9rem;margin-bottom:.5rem">{{ post.date | date: "%b %d, %Y" }}</div>
   <p>{% if post.summary %}{{ post.summary }}{% else %}{{ post.excerpt | strip_html | truncatewords:40 }}{% endif %}</p>
   
 </article>
