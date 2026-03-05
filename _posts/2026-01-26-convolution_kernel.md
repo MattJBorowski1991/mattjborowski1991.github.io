@@ -1,9 +1,9 @@
 ---
-title: "Convolution Kernel — Latency Down by 31.8%"
+title: "Convolution Kernel profiling"
 date: 2026-01-26 10:00:00 +0000
 layout: post
 summary: >
-  Optimized a convolution kernel using shared memory, `__constant__` memory, and load widening. Latency
+  Optimized a convolution kernel using shared memory, constant memory, and load widening. Latency
   decreased from 4.4 ms to 3.0 ms via Nsight Compute profiling and targeted bottleneck fixes.
 ---
 
