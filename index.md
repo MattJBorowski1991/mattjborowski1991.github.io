@@ -4,8 +4,8 @@ layout: default
 ---
 
 <div style="display:flex;gap:1.25rem;align-items:center;flex-wrap:wrap;">
-  <div style="flex:0 0 264px;">
-    <img src="/assets/profile.jpg" alt="Matt Borowski" style="width:264px;height:264px;object-fit:cover;border-radius:8px;" />
+  <div style="flex:0 0 290px;">
+    <img src="/assets/profile.jpg" alt="Matt Borowski" style="width:290px;height:290px;object-fit:cover;border-radius:8px;" />
   </div>
   <div style="flex:1;min-width:220px;">
 
