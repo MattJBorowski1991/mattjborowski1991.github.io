@@ -9,9 +9,7 @@ layout: default
   </div>
   <div style="flex:1;min-width:220px;">
 
-<p>Hi there! Thanks for your interest.</p>
-
-<p>My name is Matt and I focus on <strong>CUDA</strong> kernels.</p>
+<p>Hi there! My name is Matt and I focus on <strong>CUDA</strong> kernels.</p>
 
 <p>I did my MSc in Applied Mathematics at <a href="https://www.maths.ox.ac.uk/">University of Oxford</a>.</p>
 
