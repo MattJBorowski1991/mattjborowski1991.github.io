@@ -3,8 +3,8 @@ title: "Unfused Multi-Head Attention vs Flash Attention"
 date: 2026-02-10 10:00:00 +0000
 layout: post
 summary: >
-  Profiling analysis of unfused MHA (`mma` + `softmax` + `mma`) compared to a Flash
-  Attention kernel where one warp owns four rows of `Q`. Nsight Compute highlights
+  Profiling analysis of unfused MHA (mma + softmax + mma) compared to a Flash
+  Attention kernel where one warp owns four rows of Q. Nsight Compute highlights
   three primary bottlenecks: bank conflicts, low occupancy, and sub‑optimal grid
   utilization.
 ---
