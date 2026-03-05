@@ -17,7 +17,11 @@ layout: default
 
 <p>You can view some of my work below or on my <a href="https://github.com/MattJBorowski1991">GitHub</a>.</p>
 
-<p>I am also very much interested in Machine Learning & Data Centers.</p>
+<p>Machine Learning is evolving so rapidly in recent years that it was tough to decide where to focus.</p>
+<p>In November 2025, I committed to mastering CUDA kernels from scratch. Since then, I have profiled </p> 
+<p>and optimized more than 30 kernels for ML workloads, with speedups like 30% in the (Flash) Multi Head Attention.</p>
+
+<p>In addition to CUDA I am interested in Machine Learning & Data Centers.</p>
 
 <p>Feel free to reach out!</p>
 
