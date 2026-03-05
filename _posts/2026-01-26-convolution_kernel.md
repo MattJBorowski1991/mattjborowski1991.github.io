@@ -18,8 +18,4 @@ I optimized a convolution kernel by removing shared-memory bottlenecks, moving s
 - **Profiling:** Nsight Compute (NCU) for hotspots and SASS/PTX inspection for instruction mix.
 - **Outcome:** Reduced stalls, higher ALU throughput, and small codegen shifts (more integer ops).
 
-<p style="max-width:100%;overflow:hidden;">
-  <img src="{{ site.baseurl }}/assets/top-p-profile.png" alt="Convolution kernel profile" style="width:100%;height:auto;display:block;margin:12px 0;" />
-</p>
-
 See the kernels: [ConvProfNCU/kernels](https://github.com/MattJBorowski1991/ConvProfNCU/tree/main/kernels) and the full analysis: [profiling_summary.md](https://github.com/MattJBorowski1991/ConvProfNCU/blob/main/profiling_summary.md).

@@ -17,7 +17,7 @@ layout: default
 
 <p>You can view some of my work below or on my <a href="https://github.com/MattJBorowski1991">GitHub</a>.</p>
 
-<p>Apart from CUDA I am very much interested in data centers.</p>
+<p>Apart from CUDA I am very much interested in ML & data centers.</p>
 
 <p>Feel free to reach out!</p>
 

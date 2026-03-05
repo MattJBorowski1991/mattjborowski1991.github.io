@@ -29,7 +29,7 @@
   </head>
   <body>
     <header>
-      <div class="site-title">{{ site.title }}</div>
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
       {% if site.description %}<div style="color:#6b7280;font-size:0.95rem">{{ site.description }}</div>{% endif %}
     </header>
 
@@ -39,7 +39,7 @@
 
     <footer>
       <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
-        <div style="font-weight:600">Matt J. Borowski</div>
+        <div><a href="{{ '/' | relative_url }}" style="font-weight:600;color:inherit;text-decoration:none">Matt J. Borowski</a></div>
         <div class="social-list">
           <a class="social linkedin" href="https://www.linkedin.com/in/matt-borowski-780aab87/" aria-label="LinkedIn">
             <img src="https://www.linkedin.com/favicon.ico" alt="LinkedIn" />
