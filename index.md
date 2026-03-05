@@ -17,7 +17,7 @@ layout: default
 
 <p>You can view some of my work below or on my <a href="https://github.com/MattJBorowski1991">GitHub</a>.</p>
 
-<p>I am also very much interested in Machine Learning & data centers.</p>
+<p>I am also very much interested in Machine Learning & Data Centers.</p>
 
 <p>Feel free to reach out!</p>
 
