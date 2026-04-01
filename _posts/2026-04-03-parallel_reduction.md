@@ -1,5 +1,5 @@
 ---
-title: "12 Parallel reduction kernels"
+title: "12 Parallel Reduction Kernels"
 date: 2026-03-04 10:00:00 +0000
 layout: post
 summary: >
