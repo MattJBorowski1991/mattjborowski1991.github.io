@@ -16,7 +16,7 @@ layout: default
 <p>You can view some of my work below or on my <a href="https://github.com/MattJBorowski1991">GitHub</a>.</p>
 
   <blockquote>
-    <p><em>Machine Learning is evolving so rapidly in recent years that it was tough to decide where to focus. I started learning CUDA in November 2025 and have since profiled and optimized 50+ kernel workloads — including a ~30% speedup in Flash MHA. That focus drives the projects you’ll find below.</em></p>
+    <p><em>ML/AI is evolving rapidly; I began learning CUDA in November 2025 and have since implemented and profiled 50+ CUDA kernels, using Nsight Compute to deliver measurable speedups (e.g., ~30% on Flash MHA). Prior to focusing on CUDA, I worked in PyTorch on model training and experimentation.</em></p>
   </blockquote>
 
 <p>In addition to CUDA I am interested in Machine Learning & Data Centers.</p>
