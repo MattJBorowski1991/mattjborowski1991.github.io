@@ -15,7 +15,9 @@ layout: default
 
 <p>You can view some of my work below or on my <a href="https://github.com/MattJBorowski1991">GitHub</a>.</p>
 
-<p>Machine Learning is evolving so rapidly in recent years that it was tough to decide where to focus. In November 2025, I committed to mastering CUDA kernels from scratch. Since then, I have profiled and optimized more than 30 kernels for ML workloads, with speedups like 30% in the (Flash) Multi Head Attention kernel.</p>
+  <blockquote>
+    <p>Machine Learning is evolving so rapidly in recent years that it was tough to decide where to focus. I started learning CUDA in November 2025 and have since profiled and optimized 30+ kernels for ML workloads — including a ~30% speedup in Flash MHA. That focus drives the projects you’ll find below.</p>
+  </blockquote>
 
 <p>In addition to CUDA I am interested in Machine Learning & Data Centers.</p>
 
