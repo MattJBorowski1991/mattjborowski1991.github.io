@@ -1,9 +1,9 @@
 ---
 title: "Capacity-aware Sparse MoE"
-date: 2026-03-04 10:00:00 +0000
+date: 2026-03-08 10:00:00 +0000
 layout: post
 summary: >
-SparseMoE run1 profiling shows fused kernels vastly outperform unfused: the unfused workflow spends ~2034 ms dominated by WMMA up_proj/Swiglu/down_proj kernels, while the fused baseline variant runs in ~54 ms and the capacity aware version in ~37 ms. Capacity-aware per-expert buffering substantially improves compute/memory balance (≈46% speedup vs baseline) by reducing redundant DRAM↔shared copies and improving locality. Nsight Compute points to uncoalesced cp.async.ca.shared.global copies and WMMA load paths as primary hotspots, and flags a redundant __syncthreads() after cp.async.wait_group that contributes ~58% of warp stalls. 
+The first profiling run for Spare MoE shows fused kernels vastly outperform unfused: the unfused workflow spends ~2034 ms dominated by WMMA up_proj/Swiglu/down_proj kernels, while the fused baseline variant runs in ~54 ms and the capacity aware version in ~37 ms. Capacity-aware per-expert buffering substantially improves compute/memory balance (≈46% speedup vs baseline) by reducing redundant DRAM↔shared copies and improving locality. 
 ---
 
 SparseMoE run1 profiling shows fused kernels vastly outperform unfused: the unfused workflow spends ~2034 ms dominated by WMMA up_proj/Swiglu/down_proj kernels, while the fused baseline variant runs in ~54 ms and the capacity aware version in ~37 ms. Capacity-aware per-expert buffering substantially improves compute/memory balance (≈46% speedup vs baseline) by reducing redundant DRAM↔shared copies and improving locality. 

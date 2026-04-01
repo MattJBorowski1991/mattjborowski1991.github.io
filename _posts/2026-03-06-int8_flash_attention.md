@@ -1,6 +1,6 @@
 ---
 title: "Quantized (Int8) Flash Attention: smaller blocks = higher occupancy"
-date: 2026-03-04 10:00:00 +0000
+date: 2026-03-06 10:00:00 +0000
 layout: post
 summary: >
 Compared Br=32 vs Br=64 for my custom int8 Flash Attention kernel. Top-line:

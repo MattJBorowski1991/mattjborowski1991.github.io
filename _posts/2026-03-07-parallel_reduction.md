@@ -1,6 +1,6 @@
 ---
-title: "12 Parallel Reduction Kernels"
-date: 2026-03-04 10:00:00 +0000
+title: "Twelve Parallel Reduction Kernels"
+date: 2026-03-07 10:00:00 +0000
 layout: post
 summary: >
 CUDA benchmark suite implementing 12 parallel-reduction kernels with comprehensive Nsight Compute analysis and charts comparing latency, memory throughput, scheduler stats, and instruction/source counters. The results show bandwidth-bound behavior where the highest DRAM throughput (the atomic_global kernel) yields the best runtimes, while divergence and instruction overhead (e.g., interleaved_addr_divergent_branch) severely hurt performance. 

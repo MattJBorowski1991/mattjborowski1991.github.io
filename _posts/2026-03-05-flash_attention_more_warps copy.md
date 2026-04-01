@@ -1,6 +1,6 @@
 ---
 title: "Warp work distribution in Flash Attention"
-date: 2026-03-04 10:00:00 +0000
+date: 2026-03-05 10:00:00 +0000
 layout: post
 summary: >
   Flash Attention with 8×32×16 WMMA tiles along with d-axis warp work split enable more warps per block in Flash Attention and hike occupancy 100% (8→16 warps per scheduler) for Br=64. SRAM pressure, however, bars padding, leading to bank conflicts. A detailed analysis with Nsight Compute on parallelism trade-offs.
