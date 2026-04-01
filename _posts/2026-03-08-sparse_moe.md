@@ -3,7 +3,7 @@ title: "Capacity-aware Sparse MoE"
 date: 2026-03-08 10:00:00 +0000
 layout: post
 summary: >
-The first profiling run for Spare MoE shows fused kernels vastly outperform unfused: the unfused workflow spends ~2034 ms dominated by WMMA up_proj/Swiglu/down_proj kernels, while the fused baseline variant runs in ~54 ms and the capacity aware version in ~37 ms. Capacity-aware per-expert buffering substantially improves compute/memory balance (≈46% speedup vs baseline) by reducing redundant DRAM↔shared copies and improving locality. 
+	The first profiling run for Spare MoE shows fused kernels vastly outperform unfused: the unfused workflow spends ~2034 ms dominated by WMMA up_proj/Swiglu/down_proj kernels, while the fused baseline variant runs in ~54 ms and the capacity aware version in ~37 ms. Capacity-aware per-expert buffering substantially improves compute/memory balance (≈46% speedup vs baseline) by reducing redundant DRAM↔shared copies and improving locality. 
 ---
 
 SparseMoE run1 profiling shows fused kernels vastly outperform unfused: the unfused workflow spends ~2034 ms dominated by WMMA up_proj/Swiglu/down_proj kernels, while the fused baseline variant runs in ~54 ms and the capacity aware version in ~37 ms. Capacity-aware per-expert buffering substantially improves compute/memory balance (≈46% speedup vs baseline) by reducing redundant DRAM↔shared copies and improving locality. 

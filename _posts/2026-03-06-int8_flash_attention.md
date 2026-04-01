@@ -2,13 +2,8 @@
 title: "Quantized (Int8) Flash Attention: smaller blocks = higher occupancy"
 date: 2026-03-06 10:00:00 +0000
 layout: post
-summary: >
-	Compared Br=32 vs Br=64 for my custom int8 Flash Attention kernel. Top-line:
-	Br=32 = 9.06 ms vs Br=64 = 12.17 ms → ≈25% faster
-	Memory throughput: ≈69% vs ≈50% → ~38% higher; L2 throughput ≈2.1× higher
-	Compute & memory % of peak both rose ≈50% → ≈69% (better utilization)
-
-	Why: Br=64 uses more shared memory/registers per block, reducing resident blocks/SM and amplifying load imbalance and unavoidable per-warp accumulation barriers (guarded by if(warp_tile_col_id==0]). Br=32 fits more blocks/SM, boosts L2 locality, and yields better real-world throughput.
+summary: "Compared Br=32 vs Br=64 for my custom int8 Flash Attention kernel. Top-line: Br=32 = 9.06 ms vs Br=64 = 12.17 ms → ≈25% faster. Memory throughput: ≈69% vs ≈50% → ~38% higher; L2 throughput ≈2.1× higher. Compute & memory % of peak both rose ≈50% → ≈69% (better utilization).
+Why: Br=64 uses more shared memory/registers per block, reducing resident blocks/SM and amplifying load imbalance and unavoidable per-warp accumulation barriers (guarded by if(warp_tile_col_id==0]). Br=32 fits more blocks/SM, boosts L2 locality, and yields better real-world throughput."
 ---
 
 Compared Br=32 vs Br=64 for my custom int8 Flash Attention kernel. Top-line:
