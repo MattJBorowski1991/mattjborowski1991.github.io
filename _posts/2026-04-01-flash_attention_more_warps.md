@@ -8,6 +8,8 @@ summary: >
 
   Flash Attention with 8×32×16 WMMA tiles along with d-axis warp work split enable more warps per block in Flash Attention and hike occupancy 100% (8→16 warps per scheduler) for Br=64. SRAM pressure, however, bars padding, leading to bank conflicts. A detailed analysis with Nsight Compute on parallelism trade-offs.
 
+See the kernel code on my GitHub [here](https://github.com/MattJBorowski1991/QuantizedMHA/blob/main/mha_kernels/fa_tc_v1a.cu) and the full analysis [here](https://github.com/MattJBorowski1991/QuantizedMHA/blob/main/profiles/md/run4/ncu_details.md).
+
 ## Highlights
 
 - **Occupancy Increase:** Increased warp occupancy by splitting work along the d-dimension (8×32×16 WMMA tiles vs 16×16×16), doubling active warps for Br=64 but exposing hidden costs.
@@ -20,9 +22,7 @@ summary: >
 
 <p style="max-width:100%;overflow:hidden;">
   <video controls playsinline style="width:100%;height:auto;display:block;margin:12px 0;">
-    <source src="{{ site.baseurl }}/assets/fa_tc_v1_warp_work.mp4" type="video/mp4">
+    <source src="{{ site.baseurl }}/assets/fa_tc_v2a_warp_work.mp4" type="video/mp4">
     Your browser does not support the video tag. <a href="{{ site.baseurl }}/assets/fa_tc_v2a_warp_work.mp4">Download the MP4</a>.
   </video>
 </p>
-
-See the kernel code on my GitHub [here](https://github.com/MattJBorowski1991/QuantizedMHA/blob/main/mha_kernels/fa_tc_v1a.cu) and the full analysis [here](https://github.com/MattJBorowski1991/QuantizedMHA/blob/main/profiles/md/run4/ncu_details.md).
