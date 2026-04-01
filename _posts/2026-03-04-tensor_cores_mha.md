@@ -8,8 +8,9 @@ summary: >
   16×d chunk of Q and processes a single 16×16×16 tile at a time.
 ---
 
-
 I profiled the standard fused Flash Attention kernel against a Tensor Core–optimized implementation and measured a 30.7% runtime speedup (8.33ms → 5.77ms). The implementation uses `WMMA` for `Q@K^T` and `P@V`; each warp owns a `16×d` chunk of `Q` and processes `16×16×16` tiles serially.
+
+See the kernel code on my GitHub [here](https://github.com/MattJBorowski1991/QuantizedMHA/blob/main/mha_kernels/fa_tc_v1a.cu) and the full analysis [here](https://github.com/MattJBorowski1991/QuantizedMHA/blob/main/profiles/md/run3a/ncu_high_level.md).
 
 ## Highlights
 
@@ -25,5 +26,3 @@ I profiled the standard fused Flash Attention kernel against a Tensor Core–opt
     Your browser does not support the video tag. <a href="{{ site.baseurl }}/assets/fa_tc_v1_warp_work.mp4">Download the MP4</a>.
   </video>
 </p>
-
-See the kernel code on my GitHub [here](https://github.com/MattJBorowski1991/QuantizedMHA/blob/main/mha_kernels/fa_tc_v1a.cu) and the full analysis [here](https://github.com/MattJBorowski1991/QuantizedMHA/blob/main/profiles/md/run3a/ncu_high_level.md).
