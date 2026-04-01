@@ -30,5 +30,5 @@ See the kernel code on my GitHub [here](https://github.com/MattJBorowski1991/Qua
 - **Next:** Port Int8 to fa_tc_v1 (single-warp) and focus on padding/re-indexing or swizzled accesses to remove conflicts.
 
 <p style="max-width:100%;overflow:hidden">
-	<img src="{{ site.baseurl }}/assets/int8a_throughput.png" alt="Top-P sampling profiling" style="width:100%;height:auto;display:block;margin:12px 0" />
+	<img src="{{ site.baseurl }}/assets/int8a_throughput.png" alt="Int8 Flash Attention" style="width:100%;height:auto;display:block;margin:12px 0" />
 </p>
