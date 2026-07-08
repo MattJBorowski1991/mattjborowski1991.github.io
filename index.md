@@ -9,15 +9,13 @@ layout: default
   </div>
   <div style="flex:1;min-width:220px;">
 
-<p>Hi there! My name is Matt and I focus on <strong>CUDA</strong> kernels.</p>
+<p>Hi there! My name is Matt and I focus on <strong>CUDA/PTX</strong>.</p>
 
 <p>I did my MSc in Applied Mathematics at <a href="https://www.maths.ox.ac.uk/">University of Oxford</a>.</p>
 
 <p>You can view some of my work below or on my <a href="https://github.com/MattJBorowski1991">GitHub</a>.</p>
 
-<p><em>I began working on CUDA in November 2025 and have since implemented and profiled 50+ CUDA kernels, using Nsight Compute to deliver measurable speedups (e.g., ~30% on Flash MHA). Prior to focusing on CUDA, I worked on Computer Vision for microscopic imaging.</em></p>
-
-<p>In addition to CUDA I am interested in Machine Learning & Data Centers.</p>
+<p>In addition to kernels I am also interested in Data Center development.</p>
 
 <p>Feel free to reach out!</p>
 
@@ -45,7 +43,7 @@ layout: default
   </span>
 </p>
 
-<h2 style="margin-top:36px;margin-bottom:12px">Some of my work</h2>
+<h2 style="margin-top:36px;margin-bottom:12px">Some of my past work</h2>
 
 {% for post in site.posts %}
 <article style="margin-bottom:1.15rem;padding-bottom:1rem;border-bottom:1px solid #eee;">
